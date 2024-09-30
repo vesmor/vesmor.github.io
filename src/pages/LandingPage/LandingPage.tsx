@@ -1,3 +1,5 @@
+import { ButtonDestructive } from '../../components/DestructiveButton';
+import { ButtonSecondary } from '../../components/SecondaryButton';
 import './LandingPage.css';
 
 
@@ -26,7 +28,8 @@ function LandingPage() {
           <a href="/about">Learn more about me!</a>
         </div>
         <div className='aboutme'>
-          <button>hi</button>
+          <ButtonSecondary/>
+          <ButtonDestructive/>
           <a href="/projects">See what I've been working on!</a>
         </div>
       </div>

@@ -16,15 +16,15 @@
     animation-delay: 2s;
     animation-fill-mode: both;
 }
-.name-plate h1 {
+/* .name-plate h1 {
     font-size: 80px;
-}
+} */
 
-.links-plate {
+/* .links-plate {
     animation: nameSlideIn 2s;
     animation-delay: 4s;
     animation-fill-mode: both;
-}
+} */
 
 .graphics-plate{
     /* vertical-align: top; */
