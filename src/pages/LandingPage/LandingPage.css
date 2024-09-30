@@ -1,0 +1,27 @@
+
+.introduction-plate {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-plate {
+    display: inline-block;
+    width: 50%;
+}
+.header-plate h1 {
+    font-size: 80px;
+}
+
+.graphics-plate{
+    vertical-align: top;
+    display: inline-block;
+    width:50%;
+    height: 300px;
+}
+
+.graphics-plate img{
+    max-width: 100%;
+    max-height: 100%;
+}
