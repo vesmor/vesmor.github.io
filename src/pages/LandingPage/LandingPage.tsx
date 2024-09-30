@@ -7,11 +7,11 @@ function LandingPage() {
 
       <div className="introduction-plate">
         <div className='header-plate'>
-          <div>
+          <div className='name-plate'>
             <h1>Hi, I'm Sev.</h1>
           </div>
           <div className="links-plate">
-            <h2>Thanks for visiting my page</h2> 
+            <h2>Welcome to my page!</h2> 
           </div>      
         </div>
 
@@ -19,6 +19,16 @@ function LandingPage() {
           <img src={'assets/images/standin_profile.jpg'} alt="graphic"/>
         </div>
         
+      </div>
+
+      <div className="information-plate">
+        <div className='aboutme'>
+          <a href="/about">Learn more about me!</a>
+        </div>
+        <div className='aboutme'>
+          <button>hi</button>
+          <a href="/projects">See what I've been working on!</a>
+        </div>
       </div>
 
 

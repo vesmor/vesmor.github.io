@@ -1,0 +1,11 @@
+import Topbar from "../../components/Topbar";
+
+function LandingPage() {
+    return (
+        <div className="landingpage-div">  
+            <Topbar />
+        </div>
+    );
+  }
+  
+  export default LandingPage;
