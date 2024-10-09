@@ -1,0 +1,11 @@
+import { Button } from "./ui/button"
+
+interface ButtonGhostProps {
+    children: React.ReactNode
+    text: string;
+
+}
+
+export function ButtonGhost(props: any) {
+  return <Button variant="ghost">${props.text}</Button>
+}

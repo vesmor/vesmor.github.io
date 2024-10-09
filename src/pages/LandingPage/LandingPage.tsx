@@ -1,5 +1,6 @@
-import { ButtonDestructive } from '../../components/DestructiveButton';
-import { ButtonSecondary } from '../../components/SecondaryButton';
+import { ButtonOutline } from '../../components/OutlineButton';
+// import { ButtonDestructive } from '../../components/DestructiveButton';
+// import { ButtonSecondary } from '../../components/SecondaryButton';
 import './LandingPage.css';
 
 
@@ -25,12 +26,10 @@ function LandingPage() {
 
       <div className="information-plate">
         <div className='aboutme'>
-          <a href="/about">Learn more about me!</a>
+          <ButtonOutline text="See what I've been up to!" link="/projects"></ButtonOutline>
         </div>
         <div className='aboutme'>
-          <ButtonSecondary/>
-          <ButtonDestructive/>
-          <a href="/projects">See what I've been working on!</a>
+          <ButtonOutline text="Learn more about me!" link="/about"></ButtonOutline>
         </div>
       </div>
 
