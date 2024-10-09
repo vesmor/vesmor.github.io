@@ -13,7 +13,7 @@ function LandingPage() {
           <div className='name-plate'>
             <h1>Hi, I'm Sev.</h1>
           </div>
-          <div className="links-plate">
+          <div className="subheading-plate">
             <h2>Welcome to my page!</h2> 
           </div>      
         </div>
@@ -24,12 +24,12 @@ function LandingPage() {
         
       </div>
 
-      <div className="information-plate">
-        <div className='aboutme'>
-          <ButtonOutline text="See what I've been up to!" link="/projects"></ButtonOutline>
-        </div>
-        <div className='aboutme'>
+      <div className="buttons-plate">
+        <div className='aboutme' id='about-btn'>
           <ButtonOutline text="Learn more about me!" link="/about"></ButtonOutline>
+        </div>
+        <div className='aboutme' id='project-btn'>
+          <ButtonOutline text="See what I've been up to!" link="/projects"></ButtonOutline>
         </div>
       </div>
 

@@ -11,6 +11,7 @@
     width: 50%;
 }
 
+/* 2) second the name slides in */
 .name-plate {
     animation: nameSlideIn 2s;
     animation-delay: 2s;
@@ -21,12 +22,14 @@
     font: sans-serif;
 }
 
-.links-plate {
+/* 3) third the subheading slides in */
+.subheading-plate {
     animation: nameSlideIn 2s;
     animation-delay: 4s;
     animation-fill-mode: both;
 }
 
+/* 1) this moves over first */
 .graphics-plate{
     vertical-align: top;
     display: inline-block;
@@ -38,6 +41,36 @@
 .graphics-plate img{
     max-width: 400px;
     max-height: 400px;
+}
+
+/* then buttoms fade in */
+.buttons-plate {
+    position: fixed;
+    /* display: block; */
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 10px;
+
+    animation: buttonFadeIn 4s;
+    animation-delay: 6s;
+    animation-fill-mode: both;
+}
+
+#about-btn{
+    position: absolute;
+    left: calc(25vw);
+    margin-left: -70px;
+    float: left;
+    bottom: 0px;
+}
+
+#project-btn{
+    position: absolute;
+    right: calc(25vw);
+    margin-right: -70px;
+    float: right;
+    bottom: 0px;
 }
 
 @keyframes nameSlideIn {
@@ -55,14 +88,21 @@
 
 @keyframes moveGraphicOver {
     0% {
-        transform: translateX(calc(-50vh));
-        /* left: 50; */
+        transform: translateX(-70%);
     }
-    /* 50% {
-        transform: translateX(-65%);
-    } */
+    50% {
+        transform: translateX(-70%);
+    }
     100% {
         transform: translateX(0);
     }
 }
 
+@keyframes buttonFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
