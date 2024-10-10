@@ -1,9 +1,7 @@
-// import { ButtonOutline } from '../../components/OutlineButton';
-// import { ButtonDestructive } from '../../components/DestructiveButton';
-// import { ButtonSecondary } from '../../components/SecondaryButton';
 import { ButtonOutline } from '@/components/OutlineButton';
 import './LandingPage.css';
-
+import { ShimmerBtn} from '@/components/ShimmerButton';
+import { ShinyButtonDemo } from '@/components/ShinyButton';
 
 function LandingPage() {
   return (
@@ -27,10 +25,10 @@ function LandingPage() {
 
       <div className="buttons-plate">
         <div className='aboutme' id='about-btn'>
-          <ButtonOutline text="Learn more about me!" link="/about"></ButtonOutline>
+          <ShimmerBtn text='Learn more about me!' link='/about'></ShimmerBtn>
         </div>
         <div className='aboutme' id='project-btn'>
-          <ButtonOutline text="See what I've been up to!" link="/projects"></ButtonOutline>
+          <ShimmerBtn text="See what I've been up to!" link='/projects'></ShimmerBtn>
         </div>
       </div>
 

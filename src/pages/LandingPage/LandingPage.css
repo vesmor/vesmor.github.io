@@ -59,17 +59,19 @@
 
 #about-btn{
     position: absolute;
-    left: calc(25vw);
-    margin-left: -70px;
-    float: left;
+   
     bottom: 0px;
+
+    right: calc(25vw);
+    margin-right: -70px;
+    float: right;
 }
 
 #project-btn{
     position: absolute;
-    right: calc(25vw);
-    margin-right: -70px;
-    float: right;
+    left: calc(25vw);
+    margin-left: -70px;
+    float: left;
     bottom: 0px;
 }
 
