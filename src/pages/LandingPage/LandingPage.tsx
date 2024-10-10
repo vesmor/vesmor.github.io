@@ -1,6 +1,7 @@
-import { ButtonOutline } from '../../components/OutlineButton';
+// import { ButtonOutline } from '../../components/OutlineButton';
 // import { ButtonDestructive } from '../../components/DestructiveButton';
 // import { ButtonSecondary } from '../../components/SecondaryButton';
+import { ButtonOutline } from '@/components/OutlineButton';
 import './LandingPage.css';
 
 

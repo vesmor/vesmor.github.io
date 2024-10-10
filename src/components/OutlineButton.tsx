@@ -1,6 +1,5 @@
-import { buttonVariants } from "./ui/button";
-// import { Button } from "./ui/button";
-import { Link } from "react-router-dom"; // Import the 'Link' component from the appropriate package
+import {Button, buttonVariants } from "@/components/ui/button"
+import { Link } from "react-router-dom";
 
 interface ButtonOutlineProps {
     // children: React.ReactNode
@@ -9,5 +8,9 @@ interface ButtonOutlineProps {
 }
 
 export function ButtonOutline(props: ButtonOutlineProps) {
-  return <Link className={buttonVariants({ variant: "outline" })} to={props.link}>{props.text}</Link>
+  return (
+    <Link className={buttonVariants({ variant: "outline" })} to={"/hi"}>Click here</Link>
+
+  )
+
 }
