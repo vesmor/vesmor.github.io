@@ -1,13 +1,13 @@
-import { ButtonOutline } from '@/components/OutlineButton';
+
 import './LandingPage.css';
-import { ShimmerBtn} from '@/components/ShimmerButton';
 import { ShinyButtonLink } from '@/components/ShinyButton';
+import 'tailwindcss/tailwind.css';
 
 function LandingPage() {
   return (
-    <div className="landingpage-div">
+    <div className="landingpage-div ">
 
-      <div className="introduction-plate">
+      <div className="introduction-plate text-secondary-foreground">
         <div className='header-plate'>
           <div className='name-plate'>
             <h1>Hi, I'm Sev.</h1>
