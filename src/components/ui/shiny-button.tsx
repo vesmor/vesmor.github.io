@@ -40,7 +40,7 @@ const ShinyButton = ({ children, className, ...props }: ShinyButtonProps) => {
       )}
     >
       <span
-        className="relative block size-full text-sm uppercase tracking-wide text-[rgb(0,0,0,65%)] dark:font-light dark:text-[rgb(255,255,255,90%)]"
+        className="relative block size-full text-sm tracking-normal text-[rgb(0,0,0,65%)] dark:font-light dark:text-[rgb(255,255,255,90%)] whitespace-nowrap"
         style={{
           maskImage:
             "linear-gradient(-75deg,hsl(var(--primary)) calc(var(--x) + 20%),transparent 30%),hsl(var(--primary)) 100%))",
@@ -53,7 +53,7 @@ const ShinyButton = ({ children, className, ...props }: ShinyButtonProps) => {
           mask: "linear-gradient(rgb(0,0,0), rgb(0,0,0)) content-box,linear-gradient(rgb(0,0,0),",
           maskComposite: "exclude",
         }}
-        className="absolute inset-0 z-10 block rounded-[inherit] bg-[linear-gradient(-75deg,hsl(var(--primary)/10%)_calc(var(--x)+20%),hsl(var(--primary)/50%)_calc(var(--x)+25%),hsl(var(--primary)/10%)_calc(var(--x)+100%))] p-px"
+        className="absolute inset-0 z-10 block rounded-[inherit] bg-[linear-gradient(-75deg,hsl(var(--shimmer)/10%)_calc(var(--x)+20%),hsl(var(--shimmer)/50%)_calc(var(--x)+25%),hsl(var(--primary)/10%)_calc(var(--x)+100%))] p-px"
       ></span>
     </motion.button>
   );

@@ -1,7 +1,7 @@
 import { ButtonOutline } from '@/components/OutlineButton';
 import './LandingPage.css';
 import { ShimmerBtn} from '@/components/ShimmerButton';
-import { ShinyButtonDemo } from '@/components/ShinyButton';
+import { ShinyButtonLink } from '@/components/ShinyButton';
 
 function LandingPage() {
   return (
@@ -25,10 +25,10 @@ function LandingPage() {
 
       <div className="buttons-plate">
         <div className='aboutme' id='about-btn'>
-          <ShimmerBtn text='Learn more about me!' link='/about'></ShimmerBtn>
+          <ShinyButtonLink text='Learn more about me!' link='/about'></ShinyButtonLink>
         </div>
         <div className='aboutme' id='project-btn'>
-          <ShimmerBtn text="See what I've been up to!" link='/projects'></ShimmerBtn>
+          <ShinyButtonLink text="See what I've been up to!" link='/projects'></ShinyButtonLink>
         </div>
       </div>
 
