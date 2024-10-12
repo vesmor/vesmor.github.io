@@ -3,12 +3,14 @@ import { Link } from 'react-router-dom';
 import 'tailwindcss/tailwind.css';
 
 import {PersonIcon, BackpackIcon } from "@radix-ui/react-icons"
-import {SideBarButton } from "@/components/SideBarButton"
+import {SideBarButton } from "@/components/SideBar/SideBarButton"
 
 
 const SideBar: React.FC = () => {
     return (
-        <div className="sidebar bg-foreground text-secondary-foreground p-4 h-screen w-60 flex flex-col justify-between">
+        <div className="sidebar p-4 h-full w-60 left-0 top-0 m-0 fixed overflow-x-hidden
+                        bg-foreground text-secondary-foreground  
+                        flex flex-col justify-between">
             <div>
                 <div className='top-header mb-14'>
                     
@@ -39,7 +41,7 @@ const SideBar: React.FC = () => {
                     </li>
                 </ul>
             </div>
-            <div className="bottom-links flex justify-around">
+            <div className="bottom-links relative flex justify-around">
                 <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600">GitHub</a>
                 <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600">LinkedIn</a>
             </div>
