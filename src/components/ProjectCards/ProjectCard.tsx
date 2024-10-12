@@ -10,7 +10,8 @@ export default function ProjectCard(props: ProjectCardProps) {
         <a href={"/projects/" + props.link}>
         <div className="project-card flex flex-col md:flex-row max-w-screen-lg  h-64
                         p-1 my-4 border-spacing-0
-                        bg-foreground rounded-2xl shadow-lg">
+                        bg-foreground rounded-2xl shadow-lg
+                        hover:bg-slate-900">
             <div className="project-card-info flex-1 pr-4 mb-4 md:mb-0">
                 <h1 className="text-xl font-bold my-4 mx-4">{props.name}</h1>
                 <p className="text-gray-600 mx-4">{props.description}</p>
