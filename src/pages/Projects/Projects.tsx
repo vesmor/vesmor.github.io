@@ -8,7 +8,7 @@ function Projects(){
         <div>
 
             <SideBar />
-            <div className="content ml-60 bg-background text-white w-[calc(100vw-240px)] h-screen overflow-x-hidden overflow-y-scroll">
+            <div className="content ml-60 bg-background text-white w-[calc(100vw-240px)] h-screen overflow-x-hidden overflow-y-scroll no-scrollbar">
             <AnimatedPage>
                 <h1 className="ml-16">Projects</h1>
                 <div className="projectcard-container ml-16 m-16 py-4">

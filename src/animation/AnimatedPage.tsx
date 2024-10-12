@@ -6,14 +6,20 @@ interface AnimatedPageProps {
 }
 
 const animations = {
-  initial: { x: "100vw", opacity: 0 },
+  initial: { 
+    x: "100vw",
+    y: "0vh", 
+    opacity: 0 
+  },
   animate: {
     x: 0,
+    y: "0vh", 
     opacity: 1,
     transition: { duration: 0.5, ease: "easeOut" }
   },
   exit: { 
     x: "-100vw",
+    y: "0vh", 
     opacity: 0, 
     transition: { duration: 0.5, ease: "easeIn" } 
   }
