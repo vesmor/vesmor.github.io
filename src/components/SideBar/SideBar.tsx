@@ -2,8 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import 'tailwindcss/tailwind.css';
 
-import {PersonIcon, BackpackIcon } from "@radix-ui/react-icons"
+import {PersonIcon, BackpackIcon, GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons"
 import {SideBarButton } from "@/components/SideBar/SideBarButton"
+import { MailIcon } from 'lucide-react';
 
 
 const SideBar: React.FC = () => {
@@ -26,14 +27,14 @@ const SideBar: React.FC = () => {
                 </div>
                 <ul className="nav-links space-y-2 mb-4">
                     <li>
-                        <Link to="/about">
-                            <SideBarButton className='focus:'>
+                        <Link to="/about" className='hover:border-transparent'>
+                            <SideBarButton>
                                 <PersonIcon className="mr-2 h-4 w-4" /> About
                             </SideBarButton>
                         </Link>
                     </li>
                     <li>
-                        <Link to="/projects">
+                        <Link to="/projects" className='hover:border-transparent'>
                             <SideBarButton>
                                 <BackpackIcon className="mr-2 h-4 w-4" /> Projects
                             </SideBarButton>
@@ -42,8 +43,24 @@ const SideBar: React.FC = () => {
                 </ul>
             </div>
             <div className="bottom-links relative flex justify-around">
-                <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600">GitHub</a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600">LinkedIn</a>
+                {/* <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600">GitHub</a> */}
+                <SideBarButton className='flex items-center justify-center hover:bg-foreground hover:border-none '>
+                <a href="https://github.com/vesmor" target="_blank" rel="noopener noreferrer" className='text-inherit'>
+                    <GitHubLogoIcon className="w-6 h-6 hover:text-gray-600" />
+                </a>
+                </SideBarButton>
+                {/* <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600">LinkedIn</a> */}
+                <SideBarButton className='flex items-center justify-center hover:bg-foreground hover:border-none '>
+                    <a href="https://www.linkedin.com/in/sev-charles/" target="_blank" rel="noopener noreferrer" className='text-inherit'>
+                        <LinkedInLogoIcon className="w-6 h-6 hover:text-gray-600" />
+                    </a>
+                </SideBarButton>
+                
+                <SideBarButton className='flex items-center justify-center hover:bg-foreground hover:border-none '>
+                    <a href="mailto:romsev.charles@gmail.com" className='text-inherit'>
+                        <MailIcon className="w-6 h-6 hover:text-gray-600" />
+                    </a>
+                </SideBarButton>
             </div>
         </div>
     );

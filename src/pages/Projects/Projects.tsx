@@ -16,7 +16,7 @@ function Projects(){
                         <ProjectCard 
                             name="Innovative App"
                             description="An app that revolutionizes the way we interact with technology."
-                            image="assets/images/standin_profile.jpg"
+                            image="assets/images/cat_standin.jpg"
                             link="innovative-app"
                         />
                         <ProjectCard 
