@@ -1,50 +1,31 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Since I'm the only one developing this, this is just a reference for myself for everytime I come back to work on this website.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
+## Building
+Run `npm run dev` to start it on the local network, this will automatically start the development server on localhost on the port specified in 'vite.config.ts':
+```ts
+  server: {
+    port: 5173,
   },
-})
 ```
+To expose the developement server over the local network, you can either use `npm run host` or `npm run dev -- --host`
+This will probably not work out of the box. It definitely doesn't work on WSL2 because it's a HyperV with its own network interface...I have not found a way to fix this yet so I just try to run it on Windows: this also doesn't work out of the box and I will update as I find solutions for this.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+## Resources 
+I've been using [shadcnui](https://ui.shadcn.com/) components as a baseline but have made a lot of changes to them for styling so that they can try to fit into the theme of the website. I've also been using [magicui](https://magicui.design/), which is a similar component library for more 'flashy' buttons. To embed Links into these buttons, please remember to wrap the App componenet with the BrowserRouter component/service/thing.
+```ts
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </StrictMode>
+)
 ```
+That took me _way_ too long to figure out...
+
+For the landing page, I used plain css to make the simple animation, but later on I switched to framer-motion. So this may not build well on top of each other later, but thus far I have yet to run into any problems. If need be, hopefully it should be simple to switch the landing page to framer-motion. For time sake I will keep this as is though.
+
+## Why the switch from CRA to Vite
+Because I wanted to use shadcn.... and the new cli they updated in ~August did not support CRA without a bunch of manual oversight, which I did not want to be worried about as I wanted to keep working on other projects than just this web portfolio.
