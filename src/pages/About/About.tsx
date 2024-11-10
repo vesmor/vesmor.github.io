@@ -4,12 +4,12 @@ import './About.css';
 
 export default function About() {
     return (
-        <div className="about-page text-white h-screen overflow-x-hidden overflow-y-scroll no-scrollbar">
+        <div className="about-page text-white overflow-x-hidden overflow-y-scroll no-scrollbar">
             <SideBar />
             
-            <div className="container ml-60 p-4 w-[calc(100vw-260px)]">
+            <div className="ml-60 p-4 w-[calc(100vw-240px)] h-screen">
                 <AnimatedPage>
-                    <div className="aboutme-container ml-16 h-screen">
+                    <div className="aboutme-container ml-16 pb-16 overflow-y-scroll no-scrollbar h-screen">
                         <h1 className="text-4xl font-bold mb-20">About Me</h1>
                         <section className="mb-6">
                             <h2 className="text-2xl font-semibold mb-2">Blurb</h2>
@@ -22,6 +22,12 @@ export default function About() {
                         <section className="mb-6">
                             <h2 className="text-2xl font-semibold mb-2">Background</h2>
                             <p className="text-lg">
+                                Growing up I had limited access to the internet, so I spent most of my time exploring the world around me and learning different skills. I was always fascinated by how things worked, how the tiniest mechanisms were built to make the complex systems around me. And a younger version of me had the naive goal to learn everything about the world. 
+                                <br />
+                                I loved learning the how to do things because it got me closer to learning how the world worked. At some point I came across the 
+                                
+
+                                <br />
                                 Although I'm finishing up school, I consider myself to be a lifelong student. I'm always looking for new things to learn and new ways to grow.
                                 and I'm excited yet nervous to see where my journey takes me next. 
                                 <br />
