@@ -12,7 +12,7 @@ export default function ProjectCard(props: ProjectCardProps) {
                         bg-foreground rounded-2xl shadow-lg
                         text-white hover:bg-slate-900">
 
-            <a href={"/projects/" + props.link} className="flex flex-1">
+            <a href={"/projects/" + props.link} className="flex flex-1 text-white hover:text-inherit">
             
                 <div className="project-card-info flex-1 pr-4">
                     <h1 className="text-xl font-bold my-4 mx-4">{props.name}</h1>
@@ -20,7 +20,7 @@ export default function ProjectCard(props: ProjectCardProps) {
                 </div>
 
                 <div className="project-card-image flex-shrink-0 md:w-1/3 md:h-40">
-                    <img className="w-auto h-60 object-fill float-right m-1 rounded-2xl" src={props.image} alt="project"/>
+                    <img className="w-auto h-60 object-fill float-right m-0 rounded-2xl" src={props.image} alt="project"/>
                 </div>
 
             </a>
