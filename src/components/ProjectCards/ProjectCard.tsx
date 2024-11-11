@@ -1,3 +1,5 @@
+import './ProjectCard.css'
+
 interface ProjectCardProps {
     name: string;
     description: string;
@@ -10,7 +12,7 @@ export default function ProjectCard(props: ProjectCardProps) {
         <div className="project-card flex flex-col md:flex-row max-w-screen-lg h-64
                         p-1 my-4 border-spacing-0
                         bg-foreground rounded-2xl shadow-lg
-                        text-white hover:bg-slate-900">
+                        text-white hover:bg-slate-900  ">
 
             <a href={"/projects/" + props.link} className="flex flex-1 text-white hover:text-inherit">
             
