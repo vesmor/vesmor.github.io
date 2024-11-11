@@ -1,0 +1,9 @@
+.project-content p {
+    text-indent: 2.75rem /* 44px */;
+}
+
+#teleop-page {
+    background: url('/assets/images/teleop_console/nasa-moon-surface.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}

@@ -12,45 +12,19 @@ function Projects(){
                     <div className="projectcard-container ml-16 m-16 py-4">
                         <ul>
                             <ProjectCard 
-                                name="Innovative App"
-                                description="An app that revolutionizes the way we interact with technology."
-                                image="assets/images/cat_standin.jpg"
-                                link="innovative-app"
+                                name="Re-Rassor TeleOperation Console"
+                                description="A console for the educational, open source Rover."
+                                image="/assets/images/teleop_console/EZRASSOR_CONTROLLER.jpg"
+                                link="rassor-teleoperation-console"
                             />
                             <ProjectCard 
-                                name="Eco-Friendly Gadget"
-                                description="A gadget designed to reduce environmental impact."
-                                image="assets/images/coquette_mouse.jpg"
+                                name="Lemon Drop"
+                                description="Reverse Engineering a dashcam because we were lazy."
+                                image="assets/images/lemon_drop/Lemon-Drop.png"
                                 link="eco-friendly-gadget"
                             />
                             
-                            <ProjectCard 
-                                name="Smart Home Device"
-                                description="A device that makes your home smarter and more efficient."
-                                image="assets/images/briefcase_standin.png"
-                                link="smart-home-device"
-                            />
                             
-                            <ProjectCard 
-                                name="Health Tracker"
-                                description="A wearable device that monitors your health metrics."
-                                image="assets/images/coquette_mouse.jpg"
-                                link="health-tracker"
-                            />
-                            
-                            <ProjectCard 
-                                name="Educational Platform"
-                                description="An online platform that enhances learning experiences."
-                                image="assets/images/coquette_mouse.jpg"
-                                link="educational-platform"
-                            />
-                            
-                            <ProjectCard 
-                                name="Blah Blah Blah"
-                                description="Ipsum dolor sit amet, consectetur adipiscing elit."
-                                image="assets/images/briefcase_standin.png"
-                                link="blah-blah-blah"
-                            />
                         </ul>
 
                     </div>
