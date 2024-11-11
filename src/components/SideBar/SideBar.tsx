@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import 'tailwindcss/tailwind.css';
 
@@ -7,7 +7,11 @@ import { SideBarButton, buttonVariants } from "@/components/SideBar/SideBarButto
 import { MailIcon } from 'lucide-react';
 import './SideBar.css';
 
-const SideBar: React.FC = () => {
+interface SideBarProps {
+    isActive: boolean;
+}
+
+const SideBar: React.FC<SideBarProps> = ({ isActive }) => {
     const activeStyles = (
 
         'bg-slate-900 '
@@ -15,11 +19,11 @@ const SideBar: React.FC = () => {
     
 
     return (
-        
 
-        <div className="sidebar z-10 p-4 h-full w-60 left-0 top-0 m-0 fixed overflow-x-hidden
-                        bg-foreground text-white  
-                        flex flex-col justify-between">
+
+        <div className={"sidebar z-10 p-4 h-full w-60 left-0 top-0 m-0 fixed overflow-x-hidden bg-foreground text-white flex flex-col justify-between "
+            + (isActive ? 'sidebar-is-active' : '')
+        } >
             <div>
                 <div className='top-header mb-14'>
                     <a href='/'>

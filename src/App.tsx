@@ -7,23 +7,37 @@ import About from './pages/About/About';
 import SideBar from './components/SideBar/SideBar';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
 import Teleop from './pages/Projects/ProjectPages/Teleop';
+import './App.css';
+import { useState } from 'react';
+
+
+interface IActive{
+  isActive: boolean;
+}
 
 //side bar will not be rendered on the landing page or error page
 function App() {
 
+
+
   const location = useLocation();
+  const [isActive, setActiveClass] = useState(false);
+
+  const handleToggle = () => {
+    console.log('clicked');
+    setActiveClass(!isActive);
+  }
 
 
   return (
     <AnimatePresence mode='sync'>
-      <div className='menu-toggle'>
+      <div className={'menu-toggle ' + (isActive ? 'is-active' : '') }onClick={handleToggle}>
         <div className='hamburger'>
-          <span>
-            
-          </span>
+          <span></span>
         </div>
       </div>
-      {(location.pathname !== '/' && location.pathname !== '/404') && <SideBar/>}
+      
+      {(location.pathname !== '/' && location.pathname !== '/404') && <SideBar isActive={isActive}/>}
       <Routes key={location.pathname} location={location}> 
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<About />} />

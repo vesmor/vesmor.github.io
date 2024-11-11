@@ -1,6 +1,8 @@
 .about-page{
     background: url('/assets/images/starry_night_bg.jpg');
     background-size: cover;
+
+    transition: 0.5s ease
 }
 
 @media (max-width: 768px) {
