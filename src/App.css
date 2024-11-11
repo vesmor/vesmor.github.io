@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -104,4 +104,30 @@
   body {
     @apply bg-background text-foreground;
   }
+} */
+
+@media (max-width: 768px) {
+  .menu-toggle{
+    display: none;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 99px;
+    background: #fff;
+    cursor: pointer;
+  }
+
+  .hamburger span,
+  .hamburger span:before,
+  .hamburger span:after{
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background: #333;
+    border-radius: 99px;
+    transition: 0.3s;
+  }
+  
 }

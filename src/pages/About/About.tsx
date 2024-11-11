@@ -5,11 +5,11 @@ import './About.css';
 export default function About() {
     return (
         <div className="about-page text-white overflow-x-hidden overflow-y-scroll no-scrollbar relative">
-            <div className="ml-60 p-4 w-[calc(100vw-240px)] h-screen">
+            <div className="about-page-div ml-60 p-4 w-[calc(100vw-240px)] h-screen">
                 <AnimatedPage>
                     <div className="aboutme-container z-0 ml-16 pb-16 overflow-y-scroll no-scrollbar h-screen">
 
-                        <h1 className="text-4xl font-bold mb-20">About Me</h1>
+                        <h1 id='aboutpage-heading' className="text-4xl font-bold mb-20">About Me</h1>
                         
                         <section className="mb-6">
                             <h2 className="text-2xl font-semibold mb-2">Blurb</h2>

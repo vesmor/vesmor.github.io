@@ -5,6 +5,7 @@ import 'tailwindcss/tailwind.css';
 import { PersonIcon, BackpackIcon, GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { SideBarButton, buttonVariants } from "@/components/SideBar/SideBarButton";
 import { MailIcon } from 'lucide-react';
+import './SideBar.css';
 
 const SideBar: React.FC = () => {
     const activeStyles = (

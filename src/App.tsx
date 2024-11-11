@@ -8,7 +8,7 @@ import SideBar from './components/SideBar/SideBar';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
 import Teleop from './pages/Projects/ProjectPages/Teleop';
 
-//side bar will not be rendered on the landing page
+//side bar will not be rendered on the landing page or error page
 function App() {
 
   const location = useLocation();
@@ -16,6 +16,13 @@ function App() {
 
   return (
     <AnimatePresence mode='sync'>
+      <div className='menu-toggle'>
+        <div className='hamburger'>
+          <span>
+            
+          </span>
+        </div>
+      </div>
       {(location.pathname !== '/' && location.pathname !== '/404') && <SideBar/>}
       <Routes key={location.pathname} location={location}> 
         <Route path="/" element={<LandingPage />} />

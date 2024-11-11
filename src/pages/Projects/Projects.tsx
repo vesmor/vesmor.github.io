@@ -6,9 +6,9 @@ import './Projects.css';
 function Projects(){
     return (
         <div className="project-page">
-            <div className="project-page-div ml-60 w-[calc(100vw-240px)] h-screen text-white overflow-x-hidden overflow-y-scroll no-scrollbar">
+            <div className="project-page-div p-4 ml-60 w-[calc(100vw-240px)] h-screen text-white overflow-x-hidden overflow-y-scroll no-scrollbar">
                 <AnimatedPage>
-                    <h1 className="ml-16">Projects</h1>
+                    <h1 id='projectspage-heading' className="ml-16 text-4xl font-bold mb-20">Projects</h1>
                     <div className="projectcard-container ml-16 m-16 py-4">
                         <ul>
                             <ProjectCard 

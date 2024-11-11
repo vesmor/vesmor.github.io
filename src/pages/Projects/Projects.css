@@ -11,5 +11,10 @@
         transition: 0.5s ease;
     }
 
+    #projectspage-heading{
+        margin: 0;
+        text-align: center;
+    }
+
     
 }
