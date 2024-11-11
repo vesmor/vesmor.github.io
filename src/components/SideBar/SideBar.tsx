@@ -16,7 +16,7 @@ const SideBar: React.FC = () => {
     return (
         
 
-        <div className="sidebar z-3 p-4 h-full w-60 left-0 top-0 m-0 fixed overflow-x-hidden
+        <div className="sidebar z-10 p-4 h-full w-60 left-0 top-0 m-0 fixed overflow-x-hidden
                         bg-foreground text-white  
                         flex flex-col justify-between">
             <div>
