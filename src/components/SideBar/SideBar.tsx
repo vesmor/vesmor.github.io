@@ -22,7 +22,7 @@ const SideBar: React.FC = () => {
             <div>
                 <div className='top-header mb-14'>
                     <a href='/'>
-                        <img src='assets/images/standin_profile64.png' alt="Profile" className="profile-pic w-40 h-32 rounded-3xl mx-auto mb-4 " />
+                        <img src='/assets/images/standin_profile64.png' alt="Profile Picture" className="profile-pic w-40 h-32 rounded-3xl mx-auto mb-4 " />
                     </a>
                     <div className='name'>
                         <h1 className=" text-center text-xl font-bold">Sev Charles</h1>
