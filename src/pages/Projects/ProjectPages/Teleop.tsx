@@ -10,6 +10,9 @@ export default function Teleop() {
                 />
                 
                 <h1 className="text-3xl text-center font-bold mb-4">RASSOR TeleOperation Console</h1>
+                
+                <i className='block text-center font-semibold'>I am currently working on this project so this page is a work in progress.</i>
+                <br/>
                 <p className="mb-4 indent-0">As part of my capstone project, I'm honored to collaborate with the Florida Space Institute in developing a console for their educational, open-source rover. Alongside a team of four, I'm focused on presenting complex technical information in a way that's accessible and intuitive for users, down to grade level students.</p>
 
                 <div className="mb-4">

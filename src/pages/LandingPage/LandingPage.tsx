@@ -4,6 +4,7 @@ import './LandingPage.css';
 import { ShinyButtonLink } from '@/components/ShinyButton';
 import 'tailwindcss/tailwind.css';
 import {ExitAnimation , ExitButton} from '@/animation/ExitLanding';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 function LandingPage() {
   return (
@@ -24,7 +25,12 @@ function LandingPage() {
             </div>
             <div className="graphics-plate">
         
-              <img src={'assets/images/standin_profile.jpg'} alt="graphic"/>
+              {/* <img src={'assets/images/standin_profile.jpg'} alt="graphic"/> */}
+              <DotLottieReact
+                src="/assets/moving/solar-system-anim.lottie"
+                loop
+                autoplay
+              />
         
             </div>
           </div>
