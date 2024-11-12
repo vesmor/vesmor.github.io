@@ -34,11 +34,14 @@ function App() {
 
   return (
     <AnimatePresence mode='sync'>
+      {(location.pathname !== '/' && location.pathname !== '/404') 
+        &&
       <div className={'menu-toggle ' + (isActive ? 'is-active' : '') }onClick={handleToggle}>
         <div className='hamburger'>
           <span></span>
         </div>
       </div>
+      }
       
       {(location.pathname !== '/' && location.pathname !== '/404') && <SideBar isActive={isActive}/>}
       <Routes key={location.pathname} location={location}> 
