@@ -21,3 +21,14 @@
     background-attachment: fixed;
     background-size: cover;
 }
+
+@media (max-width: 768px) {
+    .project-content{
+        margin-left: 0;
+        width: 100vw;
+        transition: 0.5s ease
+        
+    }
+
+
+}
