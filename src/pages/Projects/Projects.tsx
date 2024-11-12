@@ -21,7 +21,7 @@ function Projects(){
                                 name="Lemon Drop"
                                 description="Reverse Engineering a dashcam because we were lazy."
                                 image="assets/images/lemon_drop/Lemon-Drop.png"
-                                link="eco-friendly-gadget"
+                                link="lemon-drop"
                             />
                             
                             
