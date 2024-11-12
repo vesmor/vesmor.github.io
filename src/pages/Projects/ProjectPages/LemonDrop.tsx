@@ -31,7 +31,7 @@ export default function LemonDrop() {
                         I fantasized day and night about having a fairy magically uploading the dashcam footage straight to my computer as soonm as I got home, until one day I stumbled upon a <a href="https://dashcamtalk.com/forum/threads/how-to-access-the-a129-over-wi-fi-without-the-viofo-app.37279/" target="_blank" rel="noopener noreferrer">forum post discussion</a> about my model of dashcam. I learned that the dashcam had a wifi module that could be accessed through a web browser. I was ecstatic. I could finally make my dream come true.
                     </p>
                     <p>
-                        I pitched the idea to my team and they were all in. We decided to make a web app that would connect to multiple dashcam's WiFi and automically download the footage. We were going to do it in 48 hours. We called it Lemon Drop.
+                        I pitched the idea to my team and they were all in. We decided to make a web app that would connect to multiple dashcam's WiFi and automically download the footage. We were going to do it in 36 hours. We called it Lemon Drop.
                     </p>
                     
                     <br/> 
@@ -57,7 +57,7 @@ export default function LemonDrop() {
                     <p>
                         Our first challenge was finding architecture that would allow the dashcam to connect easily. Usually a dashcam would be located a bit far from the home's WiFi, so we worried if a home computer would even be able to reach the home WiFi. We decided to use a Raspberry Pi as a middleman. The Raspberry Pi would connect to the dashcam's WiFi, while being connected to the home's internet through an ethernet cable. The Raspberry Pi would then host a web server that the home computer could connect to.
                     </p>
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-center mt-4">
                         <img src='/assets/images/lemon_drop/whiteboard-planning.jpg' alt='Whiteboard Architecture Planning' className='h-[50%] w-[50%] rounded'/>
                         <i>It's always important to plan your designs before implementation</i>
                     </div>  
@@ -71,14 +71,14 @@ export default function LemonDrop() {
                     </p>
                     <div className="flex flex-col items-center">
                         <img src='/assets/images/lemon_drop/own-internet-connection.jpg' alt='Local Network Setup' className='h-[10%] w-[20%] rounded'/>
-                        <i>Has your school WiFi ever been so bad you made your own?</i>
+                        <i>Has your school WiFi ever been so bad you had to setup your own network?</i>
                     </div>  
                 </div>
 
                 <div className="mb-4">
                     <h2 className="text-2xl font-semibold mb-2">Features</h2>
                     <p>
-                        At the end of our 48-hours we were able to successfully implement most of the features we planned on. Because of our time constrains we weren't able to all the features as efficiently as we wanted to, but I'm proud of the work we did in due time:
+                        At the end of our 36-hours we were able to successfully implement most of the features we planned on. Because of our time constrains we weren't able to optimize all of the features as well as we wanted to, but I'm proud of the work we did in the given time:
                         <ul className='list-disc list-inside indent-0'>
                             <li>
                                 Allowing the user to connect to and manage multiple dashcams.
@@ -91,10 +91,10 @@ export default function LemonDrop() {
                             </li>
                         </ul>
                     </p>
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-center mt-4">
                         <div className="flex flex-row justify-around">
-                            <img src='/assets/images/lemon_drop/switch-dashcams.jpg' alt='Local Network Setup' className='h-[10%] w-[40%] rounded'/>
-                            <img src='/assets/images/lemon_drop/manage-footage.jpg' alt='Local Network Setup' className='h-[10%] w-[40%] rounded'/>
+                            <img src='/assets/images/lemon_drop/switch-dashcams.jpg' alt='Screencap of the ability to switch dashcams' className='h-[10%] w-[40%] rounded'/>
+                            <img src='/assets/images/lemon_drop/manage-footage.jpg' alt='Screencap of the ability to manage your footage' className='h-[10%] w-[40%] rounded'/>
                         </div>
                         <i>Phew, I'm so happy I won't have to walk back to my car for the footage now</i>
                     </div>  
@@ -121,10 +121,17 @@ export default function LemonDrop() {
                 </div>
 
 
-                {/* <div className="mb-4">
-                    <h2 className="text-2xl font-semibold mb-2">Conclusion</h2>
-                    <p>Summarize the project and its outcomes. Mention any future plans or improvements.</p>
-                </div> */}
+                <div className="mb-4">
+                    <h2 className="text-2xl font-semibold mb-2">Extras</h2>
+                    <div className="flex flex-col items-center mt-4">
+                        <div className="flex flex-row justify-around">
+                            <img src='/assets/images/lemon_drop/knights_hack_group.jpg' alt=' PIcture of group I met and hung out with at Knights Hack' className='h-[10%] w-[23%] rounded'/>
+                            <img src='/assets/images/lemon_drop/knightshack_katandme.jpg' alt='Picture of a friend and I from a digital camera' className='h-[10%] w-[40%] rounded'/>
+                            <img src='/assets/images/lemon_drop/winning_scavenger_hunt.jpg' alt='Picture of group winning the scavenger hunt' className='h-[10%] w-[40%] rounded'/>
+                        </div>
+                        <i className='font-semibold'>Just wanted to show off the fun I had at Knights Hack (second year in a row winning scavenger hunt btw)</i>
+                    </div>  
+                </div>
 
             </div>
         </div>

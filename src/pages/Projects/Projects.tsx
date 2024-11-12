@@ -23,6 +23,11 @@ function Projects(){
                                 image="assets/images/lemon_drop/Lemon-Drop.png"
                                 link="lemon-drop"
                             />
+                            <ProjectCard 
+                                name="ResearchBuddy"
+                                description="Discord Bot to help labs not forget their dates."
+                                link="research-buddy"
+                            />
                             
                             
                         </ul>
