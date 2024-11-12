@@ -14,7 +14,7 @@ export default function ProjectCard(props: ProjectCardProps) {
                 bg-foreground rounded-2xl border
                 text-white hover:bg-slate-900 ">
 
-            <a href={"/projects/" + props.link} className=" project-card-container flex flex-1 text-white hover:text-inherit">
+            <a href={"/#/projects/" + props.link} className=" project-card-container flex flex-1 text-white hover:text-inherit">
             
             <div className="project-card-info flex-1 pr-4">
                 <h1 className="text-xl font-bold my-4 mx-4">{props.name}</h1>

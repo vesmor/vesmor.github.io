@@ -37,10 +37,10 @@ function LandingPage() {
           <ExitButton>
           <div className="buttons-plate">
             <div className='aboutme' id='about-btn'>
-              <ShinyButtonLink text='Learn more about me!' link='/about'></ShinyButtonLink>
+              <ShinyButtonLink text='Learn more about me!' link='/#/about'></ShinyButtonLink>
             </div>
             <div className='aboutme' id='project-btn'>
-              <ShinyButtonLink text="See what I've been up to!" link='/projects'></ShinyButtonLink>
+              <ShinyButtonLink text="See what I've been up to!" link='/#/projects'></ShinyButtonLink>
             </div>
           </div>
           </ExitButton >

@@ -52,7 +52,7 @@ function App() {
         <Route path="/projects/lemon-drop" element={<LemonDrop />} />
         <Route path="/projects/research-buddy" element={<ResearchBuddy />} />
         
-        <Route path="*" element={<Navigate to={"/404"}/>} />
+        <Route path="/*" element={<Navigate to={"/404"}/>} />
         <Route path="/404" element={<ErrorPage />} />
       </Routes>
     </AnimatePresence>
