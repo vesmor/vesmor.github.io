@@ -23,7 +23,11 @@ createRoot(document.getElementById('root')!).render(
   </StrictMode>
 )
 ```
-That took me _way_ too long to figure out...
+That took me _way_ too long to figure out...  
+
+*Edit 11/13/34:*  
+So I had to switch from the BrowserRouter to the HashRouter because I have been hosting on Github Pages, and it does not play well with the BrowserRouter's technology. That is why when navigating around the website there is an ugly "#" on the URL.  
+
 
 For the landing page, I used plain css to make the simple animation, but later on I switched to framer-motion. So this may not build well on top of each other later, but thus far I have yet to run into any problems. If need be, hopefully it should be simple to switch the landing page to framer-motion. For time sake I will keep this as is though.
 
