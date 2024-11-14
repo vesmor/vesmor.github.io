@@ -91,6 +91,11 @@
     }
 }
 
+/*displays shorter text on landing page, dep on screen size*/
+.short-text{
+    display:none;
+}
+
 @keyframes moveGraphicOver {
     0% {
         transform: translateX(-70%);
@@ -179,7 +184,7 @@
         animation-fill-mode: both;
     }
 
-    /* 1) this moves over first */
+    /* 1) this moves down first */
     .graphics-plate{
         vertical-align: top;
         display: inline-block;
@@ -213,8 +218,16 @@
         bottom: 0;
         font-size: 14px; /* Adjust the font size for smaller screens */
         padding: 10px 20px; /* Adjust the padding for smaller screens */
-    }
 
+    }
+    
+    .short-text{
+        display: block;
+    }
+    .full-text{
+        display: none;
+    }
+    
     @keyframes nameSlideInQuery {
         0% {
             opacity: 0;

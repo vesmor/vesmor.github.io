@@ -2,15 +2,21 @@ import ShinyButton from "@/components/ui/shiny-button";
 import { Link } from "react-router-dom";
 
 interface ShinyButtonProps {
-  text: string;
+  fulltext: string;
+  shorttext: string;
   link: string;
 }
 
 export function ShinyButtonLink(props: ShinyButtonProps) {
   return (
-    <a href={props.link}>
+    <a href={props.link} className=''>
       <ShinyButton >
-        {props.text}
+        <span className="full-text">
+          {props.fulltext}
+        </span>
+        <span className="short-text">
+          {props.shorttext}
+        </span>
       </ShinyButton>
     </a>
   );

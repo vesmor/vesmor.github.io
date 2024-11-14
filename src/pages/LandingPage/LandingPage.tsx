@@ -3,7 +3,7 @@ import AnimatedPage from '@/animation/AnimatedPage';
 import './LandingPage.css';
 import { ShinyButtonLink } from '@/components/ShinyButton';
 import 'tailwindcss/tailwind.css';
-import {ExitAnimation , ExitButton} from '@/animation/ExitLanding';
+import {ExitAnimation , ExitButtonAnimation} from '@/animation/ExitLanding';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 function LandingPage() {
@@ -34,16 +34,24 @@ function LandingPage() {
         
             </div>
           </div>
-          <ExitButton>
+          <ExitButtonAnimation>
           <div className="buttons-plate">
             <div className='aboutme' id='about-btn'>
-              <ShinyButtonLink text='Learn more about me!' link='/#/about'></ShinyButtonLink>
+              <ShinyButtonLink 
+                fulltext='Learn more about me!' 
+                shorttext='About Me'
+                link='/#/about'>
+              </ShinyButtonLink>
             </div>
             <div className='aboutme' id='project-btn'>
-              <ShinyButtonLink text="See what I've been up to!" link='/#/projects'></ShinyButtonLink>
+              <ShinyButtonLink 
+                fulltext="See what I've been up to!"
+                shorttext='Projects'
+                link='/#/projects'>
+              </ShinyButtonLink>
             </div>
           </div>
-          </ExitButton >
+          </ExitButtonAnimation >
         </div>
 
       </div>

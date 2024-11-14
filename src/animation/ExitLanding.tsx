@@ -32,7 +32,7 @@ export function ExitAnimation (props: AnimatedPageProps) {
   );
 };
 
-export function ExitButton(props: AnimatedPageProps) {
+export function ExitButtonAnimation(props: AnimatedPageProps) {
     return (
     <motion.div
         exit="exit"

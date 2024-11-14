@@ -24,11 +24,11 @@ function App() {
 
 
   const location = useLocation();
-  const [isActive, setActiveClass] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
   const handleToggle = () => {
     console.log('clicked');
-    setActiveClass(!isActive);
+    setIsActive(!isActive);
   }
 
 
