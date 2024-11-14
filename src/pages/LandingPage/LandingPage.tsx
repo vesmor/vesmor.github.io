@@ -27,6 +27,7 @@ function LandingPage() {
         
               {/* <img src={'assets/images/standin_profile.jpg'} alt="graphic"/> */}
               <DotLottieReact
+                className='w-[256px] h-[256px]'
                 src="/assets/moving/solar-system-anim.lottie"
                 loop
                 autoplay

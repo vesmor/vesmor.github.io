@@ -188,7 +188,7 @@
     .graphics-plate{
         vertical-align: top;
         display: inline-block;
-        width:100%;
+        width:10%;
         height: 100%;
         animation: moveGraphicOverQuery 2s;
     }
@@ -214,11 +214,10 @@
 
     #about-btn, #project-btn {
         position: relative;
-        margin: 25px -120px;
+        padding: 2rem;
         bottom: 0;
         font-size: 14px; /* Adjust the font size for smaller screens */
         padding: 10px 20px; /* Adjust the padding for smaller screens */
-
     }
     
     .short-text{
