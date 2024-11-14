@@ -1,6 +1,8 @@
+/* Page where all the Project Cards are located */
+/* The pages for the projects are located in the subfolder of this folder /projectpages */
+
 import AnimatedPage from "@/animation/AnimatedPage";
 import ProjectCard from "@/components/ProjectCards/ProjectCard";
-import SideBar from "@/components/SideBar/SideBar";
 import './Projects.css';
 
 function Projects(){
@@ -19,7 +21,7 @@ function Projects(){
                             />
                             <ProjectCard 
                                 name="Lemon Drop"
-                                description="Reverse Engineering a dashcam because we were lazy."
+                                description="Reverse Engineering a dashcam to automate footage retrieval."
                                 image="assets/images/lemon_drop/Lemon-Drop.png"
                                 link="lemon-drop"
                             />
