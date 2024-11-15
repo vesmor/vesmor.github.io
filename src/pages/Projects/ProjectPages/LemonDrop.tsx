@@ -134,7 +134,7 @@ export default function LemonDrop() {
                     <div className="flex flex-col items-center mt-4">
                         <div className="flex flex-row justify-around">
                             <img src='/assets/images/lemon_drop/knights_hack_group.jpg' alt=' PIcture of group I met and hung out with at Knights Hack' className='h-[10%] w-[23%] rounded'/>
-                            <img src='/assets/images/lemon_drop/knightshack_katandme.jpg' alt='Picture of a friend and I from a digital camera' className='h-[10%] w-[40%] rounded'/>
+                            <img src='/assets/images/lemon_drop/knightshack_friendandme.jpg' alt='Picture of a friend and I from a digital camera' className='h-[10%] w-[40%] rounded'/>
                             <img src='/assets/images/lemon_drop/winning_scavenger_hunt.jpg' alt='Picture of group winning the scavenger hunt' className='h-[10%] w-[40%] rounded'/>
                         </div>
                         <i className='font-semibold'>Just wanted to show off the fun I had at Knights Hack (second year in a row winning scavenger hunt btw)</i>

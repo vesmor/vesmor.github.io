@@ -28,8 +28,8 @@ export default function Teleop() {
                     </p>
                     
                     <div className='flex justify-center items-center space-x-4'>
-                        <img src='/assets/images/teleop_console/fsirover-buildingjpg.jpg' alt='Picture of a RASSOR Rover being built' className='w-64 h-auto rounded'/>
-                        <img src='/assets/images/teleop_console/explodedv1-gearbox.png' alt='Exploded view of gearbox' className='w-60 h-auto rounded'/>
+                        <img src='/assets/images/teleop_console/fsirover-buildingjpg.jpg' alt='Picture of a RASSOR Rover being built' className='w-[30%] h-auto rounded'/>
+                        <img src='/assets/images/teleop_console/explodedv1-gearbox.png' alt='Exploded view of gearbox' className='w-[24%] h-auto rounded'/>
                     </div>
 
                     <br/>

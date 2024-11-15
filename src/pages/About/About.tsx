@@ -38,12 +38,20 @@ export default function About() {
                             <br />
 
                             <p className="text-lg indent-11">
-                                When I graduated high school, I was inundated with who I wanted to eventually be. So I decided to do everything! I enrolled in my local community college to get my Associates in Arts with a focus in Computer Science. Simultaneously, I pursued my dream of flying and started lessons at my local flight school. On August 17th, 2019, I got my solo endorsement and got the tail of my shirt cut.
+                                When I graduated high school, I was inundated with who I wanted to eventually be. So I decided to do everything! I enrolled in my local community college to get my Associates in Arts with a focus in Computer Science. Simultaneously, I pursued my dream of flying and started lessons at my local flight school. On August 17th, 2019, I got my solo endorsement and per tradition got the tail of my shirt cut.
                             </p>
+                            <div className="mt-4 text-center">
+                                <img id='Solo-Shirt' src='/assets/images/about/Solo-Shirt.jpg' alt='Solo Shirt Cutout' className=' inline-block w-[30%] rounded'/>
+                            </div>
                             <br />
                             <p className="text-lg indent-11">
-                                On the last day of February of 2020, luckily the day before COVID-19 shut the world down, I officially got my Private Pilot's License
+                                On the last day of February of 2020, luckily the day before COVID-19 shut the world down, I officially got my Private Pilot's License, and I've been intermittently enjoying my wings ever since. I've taken up my family adn friends flying and even done some cool stuff like flying over the Kennedy Space Center!
                             </p>
+                            <div className="mt-4 flex flex-row items-center justify-around">
+                                <img src='/assets/images/about/landing.jpg' alt='Solo Shirt Cutout' className='w-[30%] rounded'/>
+                                <img src='/assets/images/about/first-passenger.jpg' alt='Picture of me flying, passenger took photo' className='w-[24%] rounded'/>
+                                <img src='/assets/images/about/flying-over-ksc.jpg' alt='Flying over Kennedy Space Center' className='w-[24%] rounded'/>
+                            </div>
                             <br/>
                             <p className="text-lg indent-11">
                                 Afterwards, I finished up my A.A. at community college and continued to pursue my Bachelors in Computer Science at UCF. 
