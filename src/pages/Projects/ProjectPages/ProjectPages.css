@@ -28,3 +28,11 @@
 
 
 }
+
+@media (min-width: 1281px){
+    .project-content {
+        width: calc(100vw - 240px);
+        margin-left: 15rem;
+        padding: 7.5rem;
+    }
+}
