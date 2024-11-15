@@ -161,7 +161,7 @@
         z-index: inherit;
     }
 
-    /* 2) second the name slides in */
+    /* 2 second the name slides in */
     .name-plate {
         animation: nameSlideInQuery 2s;
         animation-delay: 2s;

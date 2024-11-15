@@ -9,7 +9,7 @@ export default function LemonDrop() {
             <div className="text-white text-lg">
 
                 <img src="/assets/images/lemon_drop/Lemon-Drop.png" alt="Project Image" 
-                    className=" w-[15%] h-[30%] rounded-2xl m-4 items-center justify-center mx-auto" 
+                    className="project-image w-[15%] h-[30%] rounded-2xl m-4 items-center justify-center mx-auto" 
                 />
                 
                 <div className="flex justify-center items-center mb-4">

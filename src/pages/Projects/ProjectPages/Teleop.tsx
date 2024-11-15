@@ -6,7 +6,7 @@ export default function Teleop() {
             <div className="text-white text-lg">
 
                 <img src="/assets/images/teleop_console/EZRASSOR_CONTROLLER.jpg" alt="Project Image" 
-                    className=" w-2/4 h-5/6 rounded-2xl m-4 items-center justify-center mx-auto" 
+                    className="project-image w-2/4 h-5/6 rounded-2xl m-4 items-center justify-center mx-auto" 
                 />
                 
                 <h1 className="text-3xl text-center font-bold mb-4">RASSOR TeleOperation Console</h1>

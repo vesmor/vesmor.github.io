@@ -2,25 +2,14 @@
     text-indent: 2.75rem /* 44px */;
 }
 
-#teleop-page {
-    background: url('/assets/images/teleop_console/nasa-moon-surface.jpg');
+.project-content {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/teleop_console/nasa-moon-surface.jpg');
     background-attachment: fixed;
     background-size: cover;
 }
 
 /* Photo by <a href="https://unsplash.com/@markcjn?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mark Chan</a> on <a href="https://unsplash.com/photos/a-black-cell-phone-JhtSpYfAE14?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 */
-#LemonDrop-page{
-    background: url('/assets/images/teleop_console/nasa-moon-surface.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-#ResearchBuddy-page{
-    background: url('/assets/images/teleop_console/nasa-moon-surface.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-}
 
 @media (max-width: 768px) {
     .project-content{
@@ -28,6 +17,13 @@
         width: 100vw;
         transition: 0.5s ease
         
+    }
+
+    .project-image {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
     }
 
 
