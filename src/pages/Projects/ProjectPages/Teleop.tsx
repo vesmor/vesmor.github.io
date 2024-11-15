@@ -18,18 +18,18 @@ export default function Teleop() {
                 <div className="mb-4">
                     <h2 className="text-2xl font-semibold mb-2">Background</h2>
                     <p className="">
-                        RASSOR stands for 'Regolith Advanced Surface Systems Operational Robot', the original rover is an impressive feat of engineering that is being <a href="https://technology.nasa.gov/patent/KSC-TOPS-7">developed by NASA</a>, to be used in future as a rover on the Moon, or even Mars. 
+                        RASSOR stands for 'Regolith Advanced Surface Systems Operational Robot', the original rover is an impressive feat of engineering that is being <a target="_blank" rel="noopener noreferrer" href="https://technology.nasa.gov/patent/KSC-TOPS-7">developed by NASA</a>, to be used in future as an excavation rover on Earth and, in the future, extraterrestrial bodies. 
                     </p>
                     
                     <br/> 
                     
                     <p>    
-                        The Florida Space Institute(FSI) is offering a research and educational aspect of this rover that can be used in a more non-commericial, academic sense. Hence, they call it the <a href="https://fsi.ucf.edu/student-design/robotics/re-rassor/">RE-RASSOR rover</a>, the 'RE' standing for 'Research and Education.' They are aiming to use open-source parts and software to allow efor easier research and the ability to hand these parts to middle school kids who can then 3D print and put it together themselves.
+                        The Florida Space Institute(FSI) is offering a research and educational aspect of this rover that can be used in a more non-commericial, academic sense. Hence, they call it the <a target="_blank" rel="noopener noreferrer" href="https://fsi.ucf.edu/student-design/robotics/re-rassor/">RE-RASSOR rover</a>, the 'RE' standing for 'Research and Education.' They are aiming to use open-source parts and software to as a platform for lower cost research, and the ability to support STEAM education for elementary and middle school kids, who are given the 3D printed parts and instructed on how to put it together themselves.
                     </p>
                     
                     <div className='flex justify-center items-center space-x-4'>
-                        <img src='/assets/images/teleop_console/fsirover-buildingjpg.jpg' alt='Picture of a RASSOR Rover being built' className='w-64 h-auto rounded'/>
-                        <img src='/assets/images/teleop_console/explodedv1-gearbox.png' alt='Exploded view of gearbox' className='w-60 h-auto rounded'/>
+                        <img src='/assets/images/teleop_console/fsirover-buildingjpg.jpg' alt='Picture of a RASSOR Rover being built' className='w-[30%] h-auto rounded'/>
+                        <img src='/assets/images/teleop_console/explodedv1-gearbox.png' alt='Exploded view of gearbox' className='w-[24%] h-auto rounded'/>
                     </div>
 
                     <br/>
