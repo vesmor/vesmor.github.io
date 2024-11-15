@@ -33,6 +33,7 @@
     .project-content {
         width: calc(100vw - 240px);
         margin-left: 15rem;
-        padding: 7.5rem;
+        padding: 10rem;
+        padding-top: 5rem;
     }
 }
