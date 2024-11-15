@@ -25,15 +25,20 @@ export default function LemonDrop() {
                 <div className="mb-4">
                     <h2 className="text-2xl font-semibold mb-2">Background</h2>
                     <p>
-                       My University holds an annual hackathon called Knights Hack. It came around a perfect time as one of my teammates and I both had recently gotten a dashcam. But, after wiring everything up to my car and making sure everything was working, I realized that it was going to be a hassle to take the SD card out of the dashcam, go up to my apartment, find the adapter, plug it in, and then finally see the footage. I'm a Computer Science major, taking more than two steps is wayyy too much work. And even though the dashcam had a mobile app to download the footage it was wayyy too slow. 
+                       My University holds an annual hackathon called Knights Hack. It came around a perfect time this year as one of my teammates and I both had recently gotten a dashcam. But, after wiring everything up to my car and making sure everything was working, I was quite surprised to find that the only way to download and view footage was to either remove the SD card and read it on a computer, or painstakingly download it through a rather slow mobile app. This process was wayyy too slow, and too cumbersome a process, especially for being in 2024. 
                     </p>
+                    <br/>
                     <p>
-                        I fantasized day and night about having a fairy magically uploading the dashcam footage straight to my computer as soonm as I got home, until one day I stumbled upon a <a href="https://dashcamtalk.com/forum/threads/how-to-access-the-a129-over-wi-fi-without-the-viofo-app.37279/" target="_blank" rel="noopener noreferrer">forum post discussion</a> about my model of dashcam. I learned that the dashcam had a wifi module that could be accessed through a web browser. I was ecstatic. I could finally make my dream come true.
+                        Always looking to tinker with things, I proceeded to go home and see if there were any third-party services that would allow me to write a quick script that automatically upload footage once the dashcam arrived home. I got jealous when I saw a <a href="https://github.com/marcone/teslausb" target="_blank" rel="noopener noreferrer">project for Tesla drivers</a> who had a plug and play utility, but saw nothing that pertained to my situation. Until one day I stumbled upon a <a href="https://dashcamtalk.com/forum/threads/how-to-access-the-a129-over-wi-fi-without-the-viofo-app.37279/" target="_blank" rel="noopener noreferrer">forum post discussion</a> about my model of dashcam. I learned that the dashcam had a wifi module that could be accessed through a web browser. I was ecstatic. I could finally make my dream come true.
                     </p>
+                    <br/>
                     <p>
-                        I pitched the idea to my team and they were all in. We decided to make a web app that would connect to multiple dashcam's WiFi and automically download the footage. We were going to do it in 36 hours. We called it Lemon Drop.
+                        As the weeks led up to the hackathon, I started playing around with sending procedure calls to the dashcam and parsing the XML it returned back. There was no full documentation of what each call did so I decided to run the dashcam's mobile app companion through a decompiler called Jadx and tried to find any useful API calls. I was able to find a few interesting calls and how they were constructed, for example "192.xxx.x.xxx/?custom=1&cmd=3015" would send back an XML file with the names of all the videos. This was exciting and I know knew it was possible to make a project out of this. 
                     </p>
-                    
+                    <br/>
+                    <p>
+                        I pitched the idea to my Knights Hack team and they were all in. We discussed the idea for a bit and decided to make a web app that would automatically connect to the dashcam's WiFi whenever it was in range, similar to how your phone connects to your home WiFi when you arrive. Our stretch goal was to be able to support multiple dashcams allowing a user more than one car to manage it all in one place. With just 36 hours to do, we were all in. We wanted to squeeze all the footage out of our dashcams, so we called it Lemon Drop.
+                    </p>
                     <br/> 
                     
                     <p>    
@@ -55,7 +60,7 @@ export default function LemonDrop() {
                 <div className="mb-4">
                     <h2 className="text-2xl font-semibold mb-2">Challenges</h2>
                     <p>
-                        Our first challenge was finding architecture that would allow the dashcam to connect easily. Usually a dashcam would be located a bit far from the home's WiFi, so we worried if a home computer would even be able to reach the home WiFi. We decided to use a Raspberry Pi as a middleman. The Raspberry Pi would connect to the dashcam's WiFi, while being connected to the home's internet through an ethernet cable. The Raspberry Pi would then host a web server that the home computer could connect to.
+                        Our first challenge was finding architecture that would allow the dashcam to connect easily. Usually a dashcam would be located a bit far from the home's WiFi, so we worried a home computer wouldn't even be able to reach the dashcam's WiFi signal in the first place. This led us to use a Raspberry Pi as a middleman. The Raspberry Pi would connect to the dashcam's WiFi, while being connected to the home's internet through an ethernet cable. The Raspberry Pi would then host a web server that the home computer could connect to.
                     </p>
                     <div className="flex flex-col items-center mt-4">
                         <img src='/assets/images/lemon_drop/whiteboard-planning.jpg' alt='Whiteboard Architecture Planning' className='h-[50%] w-[50%] rounded'/>
@@ -96,7 +101,7 @@ export default function LemonDrop() {
                             <img src='/assets/images/lemon_drop/switch-dashcams.jpg' alt='Screencap of the ability to switch dashcams' className='h-[10%] w-[40%] rounded'/>
                             <img src='/assets/images/lemon_drop/manage-footage.jpg' alt='Screencap of the ability to manage your footage' className='h-[10%] w-[40%] rounded'/>
                         </div>
-                        <i>Phew, I'm so happy I won't have to walk back to my car for the footage now</i>
+                        <i>I can successfully say we dragged dashcam tech into the modern era</i>
                     </div>  
 
                     
@@ -107,7 +112,10 @@ export default function LemonDrop() {
                 <div className="mb-4">
                     <h2 className="text-2xl font-semibold mb-2">What's Next?</h2>
                     <p>
-                        After I finish this website and gather some more free time, I plan to continue working on Lemon Drop. I want to make the web app more user-friendly and intuitive. We also ran into some issues with the Raspberry Pi's WiFi connection being slow that I want to fix. I want to see if I can increase the speed at which the footage is downloaded.
+                        After I finish this website and gather some more free time, I plan to continue working on Lemon Drop. I want to make the web app more user-friendly and intuitive. We also ran into some issues with the Raspberry Pi's WiFi connection being slow that I want to optimize.
+                    </p> 
+                    <p>
+                        I also hope in the future to allow the software to be able to connect to any WiFi enabled dashcam, and not just the model that we had. I'd also like the ability to make our program modular enough to be able to run on any computer, as a wider audience may not have a Raspberry Pi lying around.
                     </p> 
                 </div>
 
