@@ -6,9 +6,9 @@ import './ProjectPages.css'
 export default function ResearchBuddy() {
     return (
         <div id='ResearchBuddy-page' className="project-content ml-60 p-10 w-[calc(100vw-240px)] h-screen text-white overflow-x-hidden overflow-y-scroll no-scrollbar">
-            <div className="text-white text-lg">
+            <div className="text-white mt-10 text-lg">
                 
-                <div className="flex justify-center items-center mb-20">
+                <div className="flex justify-center items-center mb-10">
                     <h1 className="text-3xl font-bold">Research Buddy</h1>
                     <a href="https://github.com/vesmor/ResearchBuddy" target="_blank" rel="noopener noreferrer" className='ml-2 text-inherit hover:border-none'>
                         <GitHubLogoIcon className="w-6 h-6 hover:text-gray-600 text-white" />
