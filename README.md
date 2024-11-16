@@ -12,6 +12,10 @@ Run `npm run dev` to start it on the local network, this will automatically star
 To expose the developement server over the local network, you can either use `npm run host` or `npm run dev -- --host`
 This will probably not work out of the box. It definitely doesn't work on WSL2 because it's a HyperV with its own network interface...I have not found a way to fix this yet so I just try to run it on Windows: this also doesn't work out of the box and I will update as I find solutions for this.
 
+## Deploying
+Deploying should be easy.  
+After pushing whatever main branch I want to be tracked. Go ahead and run `npm run deploy` while in the development environment. This will run a predeploy script where it builds the packages, puts it into a /dist folder and then proceeeds to push only the /dist folder onto a new branch named gh-pages, where the website will deploy from.
+
 ## Resources 
 I've been using [shadcnui](https://ui.shadcn.com/) components as a baseline but have made a lot of changes to them for styling so that they can try to fit into the theme of the website. I've also been using [magicui](https://magicui.design/), which is a similar component library for more 'flashy' buttons. To embed Links into these buttons, please remember to wrap the App componenet with the BrowserRouter component/service/thing.
 ```ts
