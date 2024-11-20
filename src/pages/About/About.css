@@ -8,6 +8,8 @@
 @media (max-width: 768px) {
     .about-page-div{
         margin-left: 0;
+        padding-right: 3rem;
+        padding-left: 0;
         width: 100vw;
         transition: 0.5s ease
         
