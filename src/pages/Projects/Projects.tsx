@@ -30,6 +30,11 @@ function Projects(){
                                 description="Discord Bot to help labs not forget their dates."
                                 link="research-buddy"
                             />
+                            <ProjectCard 
+                                name="Kerbal Space Programming"
+                                description="Programming rockets in my favorite video game, like a real rocket scientist!"
+                                link="kerbal"
+                            />
                             
                             
                         </ul>

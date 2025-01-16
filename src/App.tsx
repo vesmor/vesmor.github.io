@@ -12,6 +12,7 @@ import ErrorPage from './pages/ErrorPage/ErrorPage';
 import Teleop from './pages/Projects/ProjectPages/Teleop';
 import LemonDrop from './pages/Projects/ProjectPages/LemonDrop';
 import ResearchBuddy from './pages/Projects/ProjectPages/ResearchBuddy';
+import Kerbal from './pages/Projects/ProjectPages/KerbalSpaceProgramming';
 
 
 interface IActive{
@@ -51,6 +52,7 @@ function App() {
         <Route path="/projects/rassor-teleoperation-console" element={<Teleop />} />
         <Route path="/projects/lemon-drop" element={<LemonDrop />} />
         <Route path="/projects/research-buddy" element={<ResearchBuddy />} />
+        <Route path="/projects/kerbal" element={<Kerbal />} />
         
         <Route path="/*" element={<Navigate to={"/404"}/>} />
         <Route path="/404" element={<ErrorPage />} />
