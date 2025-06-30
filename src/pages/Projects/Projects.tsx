@@ -16,7 +16,7 @@ function Projects(){
                             <ProjectCard 
                                 name="Re-Rassor TeleOperation Console"
                                 description="A console for the educational, open source Rover."
-                                image="/assets/images/teleop_console/EZRASSOR_CONTROLLER.jpg"
+                                image="/assets/images/teleop_console/rerassor_showoff.png"
                                 link="rassor-teleoperation-console"
                             />
                             <ProjectCard 

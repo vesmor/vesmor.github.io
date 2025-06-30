@@ -5,7 +5,7 @@ export default function Teleop() {
         <div id='teleop-page' className="project-content ml-60 p-10 w-[calc(100vw-240px)] h-screen text-white overflow-x-hidden overflow-y-scroll no-scrollbar">
             <div className="text-white text-lg">
 
-                <img src="/assets/images/teleop_console/EZRASSOR_CONTROLLER.jpg" alt="Project Image" 
+                <img src="/assets/images/teleop_console/rerassor_showoff.png" alt="Project Image" 
                     className="project-image w-2/4 h-5/6 rounded-2xl m-4 items-center justify-center mx-auto" 
                 />
                 
