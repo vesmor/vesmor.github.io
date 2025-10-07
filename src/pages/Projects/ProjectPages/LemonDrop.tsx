@@ -83,9 +83,9 @@ export default function LemonDrop() {
                                 </li>
                             </ul>
                             <div className="flex flex-col items-center mt-4">
-                                <div className="flex flex-row justify-around">
-                                    <img src='/assets/images/lemon_drop/switch-dashcams.jpg' alt='Screencap of the ability to switch dashcams' className='h-[10%] w-[40%] rounded'/>
-                                    <img src='/assets/images/lemon_drop/manage-footage.jpg' alt='Screencap of the ability to manage your footage' className='h-[10%] w-[40%] rounded'/>
+                                <div className="flex flex-row justify-around gap-4">
+                                    <img src='/assets/images/lemon_drop/switch-dashcams.jpg' alt='Screencap of the ability to switch dashcams' className='h-[100%] w-[60%] rounded'/>
+                                    <img src='/assets/images/lemon_drop/manage-footage.jpg' alt='Screencap of the ability to manage your footage' className='h-[100%] w-[60%] rounded'/>
                                 </div>
                                 <i className="text-gray-400 italic mt-2">I can successfully say we dragged dashcam tech into the modern era</i>
                             </div>  
@@ -123,9 +123,9 @@ export default function LemonDrop() {
                         <h2 className="text-3xl font-bold mb-6 text-blue-300">Extras</h2>
                         <div className="flex flex-col items-center mt-4">
                             <div className="flex flex-row justify-around">
-                                <img src='/assets/images/lemon_drop/knights_hack_group.jpg' alt=' PIcture of group I met and hung out with at Knights Hack' className='h-[10%] w-[23%] rounded'/>
-                                <img src='/assets/images/lemon_drop/knightshack_friendandme.jpg' alt='Picture of a friend and I from a digital camera' className='h-[10%] w-[40%] rounded'/>
-                                <img src='/assets/images/lemon_drop/winning_scavenger_hunt.jpg' alt='Picture of group winning the scavenger hunt' className='h-[10%] w-[40%] rounded'/>
+                                <img src='/assets/images/lemon_drop/knights_hack_group.jpg' alt=' PIcture of group I met and hung out with at Knights Hack' className='h-[100%] w-[30%] rounded'/>
+                                {/* <img src='/assets/images/lemon_drop/knightshack_friendandme.jpg' alt='Picture of a friend and I from a digital camera' className='h-[10%] w-[40%] rounded'/> */}
+                                <img src='/assets/images/lemon_drop/winning_scavenger_hunt.jpg' alt='Picture of group winning the scavenger hunt' className='h-[100%] w-[55%] rounded'/>
                             </div>
                             <i className='font-semibold text-gray-400 italic mt-2'>Just wanted to show off the fun I had at Knights Hack (second year in a row winning scavenger hunt btw)</i>
                         </div>  

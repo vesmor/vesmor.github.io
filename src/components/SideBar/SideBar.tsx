@@ -33,7 +33,7 @@ const SideBar: React.FC<SideBarProps> = ({ isActive }) => {
                         <h1 className=" text-center text-xl font-bold">Sev Charles</h1>
                     </div>
                     <div className="blurb text-center mb-4 text-gray-600 font-semibold">
-                        <p>Computer Science student and Software Engineer creating solutions across software and hardware.</p>
+                        <p>Computer Science graduate and Software Engineer creating solutions across different domains.</p>
                     </div>
                 </div>
 

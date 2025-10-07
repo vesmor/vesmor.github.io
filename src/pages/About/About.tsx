@@ -19,7 +19,7 @@ export default function About() {
                         
                         {/* Blurb Section with Glassmorphism */}
                         <section className="mb-12">
-                            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 shadow-2xl hover:bg-white/15 transition-all duration-300">
+                            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 shadow-2xl transition-all duration-300">
                                 <h2 className="text-3xl font-bold mb-4 text-blue-200">Blurb</h2>
                                 <p className="text-lg leading-relaxed text-gray-100">
                                     I'm a student finishing up my Bachelor's degree in Computer Science at the University of Central Florida and am actively seeking an internship or full-time position. With experience in both backend and frontend development, I've been involved in many projects focused on providing web-based solutions, and have expanded my knowledge to include working in other areas such as embedded systems and simulation software. <a target="_blank" href="/#/projects/rassor-teleoperation-console" className="text-blue-300 hover:text-blue-200 underline transition-colors duration-200">Currently</a>, I am working on a project with the Florida Space Institute to create a teleoperation console for their RE-RASSOR rover program. 
@@ -29,7 +29,7 @@ export default function About() {
 
                         {/* Background Section */}
                         <section className="mb-12">
-                            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 shadow-2xl hover:bg-white/15 transition-all duration-300">
+                            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 shadow-2xl transition-all duration-300">
                                 <h2 className="text-3xl font-bold mb-6 text-blue-200">Background</h2>
                                 <div className="space-y-6">
                                     <p className="text-lg leading-relaxed text-gray-100">
@@ -44,7 +44,7 @@ export default function About() {
 
                         {/* Journey Section */}
                         <section className="mb-12">
-                            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 shadow-2xl hover:bg-white/15 transition-all duration-300">
+                            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 shadow-2xl transition-all duration-300">
                                 <h2 className="text-3xl font-bold mb-6 text-blue-200">Journey</h2>
                                 <div className="space-y-6">
                                     <p className="text-lg leading-relaxed text-gray-100">
@@ -61,7 +61,7 @@ export default function About() {
                                             <img 
                                                 src='/assets/images/about/Solo-Shirt.jpg' 
                                                 alt='Solo Shirt Cutout' 
-                                                className='w-full max-w-md rounded-lg shadow-lg hover:scale-105 transition-transform duration-300'
+                                                className='w-full max-w-md rounded-lg shadow-lg transition-transform duration-300'
                                             />
                                         </div>
                                         <p className="text-gray-300 italic mt-4 text-center">Thankfully, I didn't wear my favorite shirt that day!</p>
@@ -73,22 +73,22 @@ export default function About() {
                                     
                                     {/* Flying Images with Modern Grid */}
                                     <div className="mt-8">
-                                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:bg-white/10 transition-all duration-300">
+                                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 transition-all duration-300">
                                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                                                 <img 
                                                     src='/assets/images/about/landing.jpg' 
                                                     alt='Passenger side picture of me landing' 
-                                                    className='w-full rounded-lg shadow-lg hover:scale-105 transition-transform duration-300'
+                                                    className='w-full rounded-lg h-[100%] shadow-lg transition-transform duration-300'
                                                 />
                                                 <img 
                                                     src='/assets/images/about/first-passenger.jpg' 
                                                     alt='Picture of me flying, passenger took photo' 
-                                                    className='w-full rounded-lg shadow-lg hover:scale-105 transition-transform duration-300'
+                                                    className='w-full rounded-lg shadow-lg transition-transform duration-300'
                                                 />
                                                 <img 
                                                     src='/assets/images/about/flying-over-ksc.jpg' 
                                                     alt='Flying over Kennedy Space Center' 
-                                                    className='w-full rounded-lg shadow-lg hover:scale-105 transition-transform duration-300'
+                                                    className='w-full rounded-lg shadow-lg transition-transform duration-300'
                                                 />
                                             </div>
                                         </div>
@@ -104,7 +104,7 @@ export default function About() {
 
                         {/* Future Plans Section */}
                         <section className="mb-12">
-                            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 shadow-2xl hover:bg-white/15 transition-all duration-300">
+                            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 shadow-2xl transition-all duration-300">
                                 <h2 className="text-3xl font-bold mb-6 text-blue-200">Future Plans</h2>
                                 <div className="space-y-6">
                                     <p className="text-lg leading-relaxed text-gray-100">

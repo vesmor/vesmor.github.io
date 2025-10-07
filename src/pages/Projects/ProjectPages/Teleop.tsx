@@ -14,7 +14,7 @@ export default function Teleop() {
                 
                 <div className="mb-8">
                     <div className="bg-black/40 backdrop-blur-md rounded-2xl p-8 border border-white/10 shadow-2xl hover:bg-black/50 transition-all duration-300">
-                        <p className="text-lg leading-relaxed text-gray-200 mb-6">As part of my capstone project, I'm honored to collaborate with the Florida Space Institute in developing a console for their educational, open-source rover. Alongside a team of four, I'm focused on presenting complex technical information in a way that's accessible and intuitive for users, down to grade level students.</p>
+                        <p className="text-lg leading-relaxed text-gray-200 mb-6">As part of my capstone project, I was able to volunteer with the Florida Space Institute to help develop a console for their educational, open-source rover. Our team of 5 were tasked with presenting complex technical information in a way that's accessible and intuitive for a variety of users, from researchers to grade-level students.</p>
                     </div>
                 </div>
 
@@ -47,20 +47,20 @@ export default function Teleop() {
                         <h2 className="text-3xl font-bold mb-6 text-blue-300">Features</h2>
                         <div className="space-y-6">
                             <p className="text-lg leading-relaxed text-gray-200">
-                                Our goal is to create a teleoperation console that is user-friendly and intuitive. Because there may be multiple rovers in the regolith bin  Our team has to take into account the wide array of experience that our audience may have. Some of the features we are working on include:
+                                We successfully created a console that was user-friendly, intuitive, and quote "made it feel like you were doing something cool". Some of the features that we implemented were:
                             </p>
                             <ul className='list-disc list-inside indent-0 text-lg text-gray-200 space-y-2'>
                                 <li>
-                                    Switching between multiple rovers
+                                    Switching control between multiple rovers, and keeping track of the previous inputs sent to the rover
                                 </li>
                                 <li>
-                                    Simulating a time-delay being as if on another planet
+                                    Simulating a communication time-delay as if the rover was on another planet
                                 </li>
                                 <li>
-                                    Simulating an unreliable connection
+                                    Allowing users to find rovers over the network automatically without needing to know IP addresses
                                 </li>
                                 <li>
-                                    3D representation of Rover's environment
+                                    Console could control rovers in a Gazebo simulation, or real-life rovers 
                                 </li>
                             </ul>
                         </div>
@@ -70,20 +70,67 @@ export default function Teleop() {
                 <div className="mb-8">
                     <div className="bg-black/40 backdrop-blur-md rounded-2xl p-8 border border-white/10 shadow-2xl hover:bg-black/50 transition-all duration-300">
                         <h2 className="text-3xl font-bold mb-6 text-blue-300">Challenges</h2>
+                        <h3 className="text-lg font-semibold mb-2 text-blue-300">Understanding the Rover</h3>
                         <div className="space-y-6">
                             <p className="text-lg leading-relaxed text-gray-200">
                                 The first hurdle we had to overcome was understanding the rover and its capabilities. We had to learn how the rover was built, how it was controlled, and what it was capable of. This was a challenge because the rover was still in development and there were multiple versions of the rover. It was difficult to always track down the correct person we needed for information.
                             </p>
                             <p className="text-lg leading-relaxed text-gray-200">
-                                The second challenge was getting to work with the rover. At the time all the rovers were in use either for testing or for demonstrations. Instead, we had to work with a simulation of the rover. This was a challenge because the simulation software was not user-friendly and there lacked a lot of documentation on how to set it up and use it. <br/>
+                                Along with this it was hard even getting to work with the rover. At the time all the rovers were in use either for testing or for demonstrations. Instead, we had to work with a simulation of the rover. This was a challenge because the simulation software was not user-friendly and there lacked a lot of documentation on how to set it up and use it. <br/>
                                 Our first major win was getting the Gazebo simulation to be up in the first place.
+                                After our struggle in getting the simulation up and running and chasing down the different software requirements we needed, we took the time to write extensive documentation detailing how we got the different parts of the software to work together, including which version numbers we used. Hopefully this will make life easier for future teams to get started.
                             </p>
                             <div>
                                 <img src='/assets/images/teleop_console/Gazebo-Screenshot.png' alt='Gazebo Simulation' className='h-auto rounded'/>
                             </div>
+                            
+                            
+                            <h3 className="text-lg font-semibold mb-2 text-blue-300">Fixing previous bugs</h3>
+                            <p className="text-lg leading-relaxed text-gray-200">
+                                Since our project was focused on making the previous attempt at the console better, we wanted to implement features rover-side and on the frontend to improve the user experience. A lot of the work we did was fixing bugs and adding quality-of-life improvements that were present in the previous version of the rover's software so that they would stop hindering us in our attempts to implement more features. Simple things like a camera failing to be found on the rover would crash the whole program and force us to restart, which was very frustrating when we were trying to test new features. We went through implementing gracious error handling and even simple things like automatically searching for a camera on another port if the default one wasn't found, that made things not fail catastrophically all the time.
+                            </p>
+                            
+                            <h3 className="text-lg font-semibold mb-2 text-blue-300">Learning Networking</h3>
+                            <p>
+                                A big quality of life addition in our project was allowing the console to find rovers on the network automatically. Even though the rovers were expected to be used by school teachers and students, to set it up you had to guide them on how to login to a terminal and enter different linux commands until they found all the information they needed. To solve this we had to learn about different networking protocols and how to implement them. We ended up using mDNS broadcasting as it was one of the easier protocols to understand and use given the time we had and the toolset available to us. 
+                            </p>
+
                         </div>
                     </div>
                 </div>
+                <div className="mb-8">
+                    <div className="bg-black/40 backdrop-blur-md rounded-2xl p-8 border border-white/10 shadow-2xl hover:bg-black/50 transition-all duration-300">
+                        <h2 className="text-3xl font-bold mb-6 text-blue-300">Accomplishments</h2>
+                        <div className="space-y-6">
+                            <p className="text-lg leading-relaxed text-gray-200">
+                                Personally I consider this project one of my biggest accomplishments. I was able to learn a lot about robotics, networking, and software development. I was able to work with a team of talented individuals and we were able to create a console that we are all proud of, and got plenty of positive feedback on. 
+                            </p>
+                            <p className="text-lg leading-relaxed text-gray-200">
+                                After project completion we were invited to present our project at the Regolith lab in front of the FSI staff and sponsors. It was a great experience and we got to actually deploy our software on this cool looking console they had set up and drive multiple rovers around in a simulated regolith bin! 
+                            </p>
+                            
+                            <div className="flex justify-center items-center space-x-4 mt-4">
+                                <img src='/assets/images/teleop_console/console-in-lab.jpg' alt='Picture showing the console deployed on lab computers' className='w-[45%] h-auto rounded'/>
+                                <img src='/assets/images/teleop_console/rovers_in_bin.jpg' alt='Rovers driving around regolith bin' className='w-[45%] h-auto rounded'/>
+                            </div>
+
+                            <p className="text-lg leading-relaxed text-gray-200">
+                                I was also invited to the Kennedy Space Center education center to present our project to a group of educators and some research engineers from the SwampWorks Lab. 
+                            </p>
+
+                            <div className="flex justify-center items-center space-x-4 mt-4">
+                                <video className='w-[30%] h-auto rounded' controls playsInline autoPlay={true} preload="metadata">
+                                    <source src='/assets/videos/teleop_console/pan-around-of-regolithlab.mov' type='video/mp4'/>
+                                    Your browser does not support the video tag.
+                                </video>
+                                <img src='/assets/images/teleop_console/page-of-powerpoint.png' alt='Rovers driving around regolith bin' className='w-[45%] h-auto rounded'/>
+                            </div>
+                            <i className="text-gray-400 italic mt-2 text-center">Video of the event and a slide from one of my powerpoints, can't believe NASA thought I had something important to say</i>
+
+                        </div>
+                    </div>
+                </div>
+
 
                 <div className="mb-8">
                     <div className="bg-black/40 backdrop-blur-md rounded-2xl p-8 border border-white/10 shadow-2xl hover:bg-black/50 transition-all duration-300">
@@ -91,17 +138,12 @@ export default function Teleop() {
                         <ul className="list-disc list-inside text-lg text-gray-200 space-y-2">
                             <li>Gazebo</li>
                             <li>Robot Operating System</li>
-                            <li>Python's Flask</li>
-                            <li>React</li>
+                            <li>Python's FastAPI</li>
+                            <li>React / React Native</li>
+                            <li>Electron</li>
                         </ul>
                     </div>
                 </div>
-
-                {/* <div className="mb-4">
-                    <h2 className="text-2xl font-semibold mb-2">Conclusion</h2>
-                    <p>Summarize the project and its outcomes. Mention any future plans or improvements.</p>
-                </div> */}
-
             </div>
         </div>
     );
