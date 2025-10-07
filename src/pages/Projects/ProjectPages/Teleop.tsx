@@ -119,7 +119,7 @@ export default function Teleop() {
                             </p>
 
                             <div className="flex justify-center items-center space-x-4 mt-4">
-                                <video className='w-[30%] h-auto rounded' controls playsInline autoPlay={true} preload="metadata">
+                                <video className='w-[30%] h-auto rounded' controls playsInline autoPlay={false} preload="metadata">
                                     <source src='/assets/videos/teleop_console/pan-around-of-regolithlab.mov' type='video/mp4'/>
                                     Your browser does not support the video tag.
                                 </video>
